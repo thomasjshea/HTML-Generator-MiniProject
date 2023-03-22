@@ -18,7 +18,7 @@ const generateHTML = ({name, location, github, linkedin}) =>
       <h3>Example heading <span class="badge bg-secondary">Contact Me</span></h3>
       <ul class="list-group">
         <li class="list-group-item">My GitHub username is <a href="https://github.com/${github}">${github}</a></li>
-        <li class="list-group-item">LinkedIn:<a href="${linkedin}">${linkedin}</a></li>
+        <li class="list-group-item">LinkedIn: <a href="https://www.linkedin.com/in/${linkedin}">${linkedin}</a></li>
       </ul>
     </div>
   </header>
@@ -45,7 +45,7 @@ inquirer
         {
             type: 'input',
             name: 'linkedin',
-            message: 'Please enter your Linkedin URL.'
+            message: 'What is your Linkedin Username?'
         }
     ])
     .then((answers) => {
